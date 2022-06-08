@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1085598771.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>ToDoList</title>
 </head>
 <body>
-    <header class="header border">
+    <header class="header ">
         <h1 class="title-header text-center">ToDoList</h1>
     </header>
     <div class="container">
         <div class="todo-list">
             <div class="container-todo-list border">
                 <h2 class="title-h2 text-center">Lista Pendientes</h2>
-                <div class="task margin-bottom">
-                    <input type="checkbox" name="task" id="Task">
-                    <label for="task">Revisar Orden 105698</label>
+                <div class="busqueda border">
+                    <form action="" class="formulario">
+                        <input type="text" placeholder="Agregar tarea">
+                    </form>
+                    <button class="btn btn-primary"><i class="fas fa-plus"></i></button>
                 </div>
                 <div class="task margin-bottom">
-                    <input type="checkbox" name="task" id="Task">
-                    <label for="task">Revisar Orden 105698</label>
+                    <ul class="task-list">
+                        
+                    </ul>
                 </div>
-                <button class="btn btn-primary">+ Nueva Tarea</button>
+                <div class="vacio text-center">
+                    <p>No existen tareas</p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
