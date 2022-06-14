@@ -6,10 +6,16 @@ const vacio = document.querySelector('.vacio');
 agregarBtn.addEventListener('click', (e) => {
     e.preventDefault();//evita la recarga de la pagina, quita las acciones por defecto
     const texto = input.value; //al clikear el boton toma el valor y lo guarda en la variable
+    
     if(texto !== ''){
         const li = document.createElement('li');
         const p = document.createElement('p');
         p.textContent = texto;//Se toma el valor de la variable texto y se crea un li con dicho dato
+        //localStorage.setItem('Tarea', texto);
+        let tarea = document.getElementById('contenedor');
+        //console.log(tarea);
+        //console.log(localStorage.getItem('Tarea'));
+        console.log(p.textContent);
         li.appendChild(p);
         li.appendChild(eliminarBtn());
         ul.appendChild(li);
@@ -32,3 +38,11 @@ function eliminarBtn() {
     });
     return borrar;
 }
+/*
+let num = 105487;
+localStorage.setItem('Orden', num);
+console.log(localStorage.getItem('Orden'));
+num = 16;
+localStorage.setItem('Orden', num);
+console.log(localStorage.getItem('Orden'));
+*/
